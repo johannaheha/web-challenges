@@ -32,18 +32,50 @@ Make sure not to put your code into the comments, because then nothing will happ
 
 .button1 {
   /* Style me! Change my border, set a border radius or try out other styles. :) */
+  border: 15px solid #ccc;
+  border-radius: 18px;
+  padding: 18px 12px;
+  background-color: pink;
+  color: #333;
+  cursor:zoom-in;
 }
 
 .button2 {
   /* Style me! Change my color or background-color, or both! You can experiment with different color formats here, like HEX, RGB, etc. */
-}
+background-color: #add8e6; 
+  color: hsl(210, 100%, 20%);
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;}
 
 .button3 {
   /* Style me! You can test out changing the font, font size, ...*/
+font-family: 'Georgia', serif; 
+  font-size: 20px;                
+  font-weight: bold;              
+  color: #4a148c;                
+  padding: 8px 16px;
+  cursor: pointer;
 }
 
 .button4 {
   /* Style me! Can you add a shadow to this button? Try playing around with shadow properties - you can even change the shadow color, size, and more. */
+  padding: 8px 16px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #222;
+  font-weight: 600;
+  font-size: 16px;
+
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s ease;
 }
+
+.button4:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
 
 /* Feel free to play around with other properties, too. */
