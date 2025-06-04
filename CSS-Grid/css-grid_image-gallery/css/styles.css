@@ -28,6 +28,8 @@ body {
 }
 
 .teaser-grid {
+  display: grid;
+  grid-template: 1fr 1fr/ 1fr 1fr;
   min-width: 40rem;
   min-height: 100vh;
 
