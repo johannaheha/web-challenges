@@ -15,6 +15,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px 200px 300px;
+  grid-template-areas: 
+  "banane ananas melone"
+  "apfel ananas blumenkohl"
+  "apfel tomate blumenkohl";
   gap: 1rem;
   padding: 1rem;
   /* Add styles here */
@@ -30,24 +34,29 @@ body {
 
 .image-board__image--1 {
   /* Add styles here */
+  grid-area: banane;
 }
 
 .image-board__image--2 {
   /* Add styles here */
+  grid-area: apfel;
 }
 
 .image-board__image--3 {
   /* Add styles here */
+  grid-area: melone;
 }
 
 .image-board__image--4 {
   /* Add styles here */
+  grid-area: ananas;
 }
 
 .image-board__image--5 {
-  /* Add styles here */
+  grid-area: tomate;
 }
 
 .image-board__image--6 {
   /* Add styles here */
+  grid-area: blumenkohl ;
 }
