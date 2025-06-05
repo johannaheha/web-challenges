@@ -6,6 +6,13 @@
 
 /* Your solution */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 /* Task 2: Let's work on some basic stylings that we want to apply to all elements in your code via inheritance. Which selector do we need for this? */
 
 /* Add selector */
@@ -93,21 +100,25 @@ section.favourites {
 /* Task 7: Finally, let's style our list with of favorite Pokémon. Which selector do we need? Also, add values for padding. */
 
 /* Add selector */
+.favourites ul
  {
   list-style: "🧡";
-  padding-left: /* Add value */ ;
+  padding-left: 40% /* Add value */ ;
 }
 
 /* Add selector */
+.favourites p
  {
-  padding-left: /* Add value */ ;
+  padding-left: 8px; 
+  /* Add value */ ;
 }
 
 /* ------- The End -------- */
 
 .image-fluid {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /* Note: After finishing all tasks, this class should also work. The image should adjust its size flexibly according to the width of the viewport. */
