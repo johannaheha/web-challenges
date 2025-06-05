@@ -6,9 +6,17 @@
 
 /* Your solution */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 /* Task 2: Let's work on some basic stylings that we want to apply to all elements in your code via inheritance. Which selector do we need for this? */
 
 /* Add selector */
+body
  {
   font-family: monospace;
   font-size: 1rem;
@@ -22,6 +30,10 @@
 
 /* Your solution */
 
+.title , .subtitle{
+  line-height: 1.2;
+}
+
 /* Task 4: Now we want to give our h1 element more styles to shine! Add the following styles by writing the correct declarations inside the next CSS rule:
 
 - Change the background color to white
@@ -32,6 +44,10 @@
 
 .title {
   /* Your solution */
+  background-color: white;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
 }
 
 /* ------- Sections ------- */
@@ -46,6 +62,14 @@
 
 section {
   /* Your solution */
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-left: 5px solid orange;
+}
+
+section.favourites {
+  border-left-color: gold;
 }
 
 /* ------- Headings Part 2 ------- */
@@ -58,30 +82,43 @@ section {
 - Bonus: The border color of the "Favorite Pokémon" title should be "orange". Hint: You may need another CSS rule.
 */
 
-.subtitle {
+.title {
   /* Your solution */
+  border-left: 3px solid gold;
+  border-right: 3px solid gold;
+  padding: 20px;
+  display: inline-block;
 }
+
+.favourites .subtitle{
+    border: 18px ridge orange;
+}
+
 
 /* ------- List ------- */
 
 /* Task 7: Finally, let's style our list with of favorite Pokémon. Which selector do we need? Also, add values for padding. */
 
 /* Add selector */
+.favourites ul
  {
   list-style: "🧡";
-  padding-left: /* Add value */ ;
+  padding-left: 40% /* Add value */ ;
 }
 
 /* Add selector */
+.favourites p
  {
-  padding-left: /* Add value */ ;
+  padding-left: 8px; 
+  /* Add value */ ;
 }
 
 /* ------- The End -------- */
 
 .image-fluid {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /* Note: After finishing all tasks, this class should also work. The image should adjust its size flexibly according to the width of the viewport. */
