@@ -55,6 +55,14 @@ body
 
 section {
   /* Your solution */
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-left: 5px solid orange;
+}
+
+section.favourites {
+  border-left-color: gold;
 }
 
 /* ------- Headings Part 2 ------- */
@@ -67,9 +75,18 @@ section {
 - Bonus: The border color of the "Favorite Pokémon" title should be "orange". Hint: You may need another CSS rule.
 */
 
-.subtitle {
+.title {
   /* Your solution */
+  border-left: 3px solid gold;
+  border-right: 3px solid gold;
+  padding: 20px;
+  display: inline-block;
 }
+
+.favourites .subtitle{
+    border: 18px ridge orange;
+}
+
 
 /* ------- List ------- */
 
