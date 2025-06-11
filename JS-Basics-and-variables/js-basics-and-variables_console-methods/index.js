@@ -14,7 +14,7 @@ console.log(coding);
 
 // 3. Store the sentence 'Happy hacking!' in a variable named 'hacking'.
 
-let hackig = "Happy hacking!";
+let hacking = "Happy hacking!";
 
 // 4. Display the variable 'hacking' as a message in the console.
 
