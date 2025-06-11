@@ -13,7 +13,7 @@ console.clear();
 
 const postTitle = "Post Title";
 const postContent = "post content bla bla tralalala";
-const numberoflikes = 4;
+let numberoflikes = 0;
 const username = "Joe Doe";
 const isReported = true;
 
@@ -30,5 +30,8 @@ console.log(username);
 console.log(isReported);
 
 // --v-- write your code here --v--
+
+numberoflikes = numberoflikes + 1;
+console.log(numberoflikes);
 
 // --^-- write your code here --^--
