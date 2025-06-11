@@ -11,6 +11,13 @@ console.clear();
 
 // --v-- write your code here --v--
 
+const postTitle = "Post Title";
+const postContent = "post content bla bla tralalala";
+const numberoflikes = 4;
+const username = "Joe Doe";
+const isReported = true;
+
+
 // --^-- write your code here --^--
 
 /*
