@@ -11,12 +11,27 @@ console.clear();
 
 // --v-- write your code here --v--
 
+const postTitle = "Post Title";
+const postContent = "post content bla bla tralalala";
+let numberoflikes = 0;
+const username = "Joe Doe";
+const isReported = true;
+
 // --^-- write your code here --^--
 
 /*
 2. Log all variables to the console. Then increase the number of likes by one and log the updated like count. Modify your code from step 1 if necessary.
 */
 
+console.log(postTitle);
+console.log(postContent);
+console.log(numberoflikes);
+console.log(username);
+console.log(isReported);
+
 // --v-- write your code here --v--
+
+numberoflikes = numberoflikes + 1;
+console.log(numberoflikes);
 
 // --^-- write your code here --^--
