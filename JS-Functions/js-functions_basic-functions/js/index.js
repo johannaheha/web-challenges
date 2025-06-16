@@ -10,6 +10,13 @@ console.clear();
 
 // --v-- write your code here --v--
 
+// Daten definieren:
+
+const title = "Alice im Wunderland";
+const author = "Julia Jung";
+let bookRating = 4.5;
+let numberOfCopiesSold = 120;
+
 // --^-- write your code here --^--
 
 /*
@@ -27,6 +34,27 @@ Then:
 */
 
 // --v-- write your code here --v--
+
+function logBookData (){
+  console.log (title);
+  console.log (author);
+  console.log (bookRating);
+  console.log (numberOfCopiesSold);
+}
+
+logBookData();
+
+// updates
+
+numberOfCopiesSold++ ;
+bookRating = 4.7;
+logBookData();
+
+// Ausgabe nach Update
+
+console.log ("Updated Details");
+logBookData ();
+
 
 // --^-- write your code here --^--
 
