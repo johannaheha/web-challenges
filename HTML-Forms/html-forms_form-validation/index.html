@@ -32,21 +32,28 @@
             name="firstName"
             id="first-name"
             placeholder="Your first name"
+            required
+            minlength="4"
+            maxlength="30"
           />
 
           <label for="last-name">Last Name</label>
           <input
+            id="last-name"
             type="text"
             name="lastName"
             id="last-name"
             placeholder="Your last name"
+            required
+            minlength="4"
+            maxlength="30"
           />
 
           <label for="age">Age</label>
-          <input type="number" name="age" id="age" />
+          <input type="number" name="age" id="age" min="14" required />
 
           <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
+          <input type="email" name="email" id="email" required />
         </fieldset>
 
         <fieldset>
@@ -66,6 +73,7 @@
           <textarea
             name="details"
             id="details"
+            rows="6"
             placeholder="Please provide as much detail as possible"
           ></textarea>
 
@@ -90,6 +98,7 @@
               type="checkbox"
               name="terms-of-service"
               id="terms-of-service"
+              required
             />
             I have read the terms of service and agree to sell my soul
             <a
