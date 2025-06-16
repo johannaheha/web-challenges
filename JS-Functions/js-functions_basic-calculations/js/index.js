@@ -11,23 +11,28 @@ Each function should return the result of its respective calculation:
 */
 
 function add(a, b) {
+  return a+b;
   // Implement the addition logic here
 }
 
 function subtract(a, b) {
+  return a-b;
   // Implement the subtraction logic here
 }
 
 function multiply(a, b) {
   // Implement the multiplication logic here
+  return a * b;
 }
 
 function divide(a, b) {
+  return a / b;
   // Implement the division logic here
 }
 
 function remainder(a, b) {
   // Implement the remainder (modulo) logic here
+  return a % b;
 }
 
 /*
