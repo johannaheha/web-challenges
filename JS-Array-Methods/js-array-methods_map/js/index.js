@@ -24,10 +24,15 @@ const cards = [
   },
 ];
 
-const lowerCaseAnswers = null; // ['as often as you like.', ...]
+const lowerCaseAnswers = cards.map(card => card.answer.toLocaleLowerCase()); //wandelt Antwort in Kleinbuchstaben
 
-const questionsAndAnswersTogether = null; // ["How often can I use <header>? - As often as you like.", ...]
+const questionsAndAnswersTogether = cards.map(card=> `${card.question} - ${card.answer}`); //Kombiniert FrageAntwort und speichert in neuem Array
 
-const questionAndAnswer = null; // [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
+const questionAndAnswer = cards.map(card => ({
+  question: card.question,
+  answer: card.answer,
+})); //Erstellt neues Array mit Objekten, das jeweilige Antwort enthält
 
 export { lowerCaseAnswers, questionsAndAnswersTogether, questionAndAnswer };
+
+console.log(questionAndAnswer)
