@@ -10,3 +10,5 @@ likeButton.addEventListener("click", handleLikeButtonClick);
 
 // Exercise:
 // Use document.createElement() and append another social media post to the body.
+
+

@@ -48,13 +48,13 @@ navElement.append(ul);
 
 // --v-- write or modify code below this line --v--
 
-for(const key in nav) {
-  const li = document.createElement("li");     //li erstellen
-  const a = document.createElement("a");       //a erstellen
-  a.href = nav[key].href;                     //href setzen
-  a.textContent = nav[key].text;               // linktext setzen
-  li.appendChild(a);                         //a ins li
-  ul.appendChild(li);                   //li ins ul
+for(const page in nav) {
+  const listElement = document.createElement("listElement");     //li erstellen
+  const anchorTag = document.createElement("anchorTag");       //a erstellen
+  a.href = nav[page].href;                     //href setzen
+  a.textContent = nav[page].text;               // linktext setzen
+  listElement.appendChild(anchorTag);            //a ins li
+  ul.appendChild(listElement);                   //li ins ul
 }
 
 // --^-- write or modify code above this line --^--

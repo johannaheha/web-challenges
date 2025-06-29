@@ -9,8 +9,12 @@ async function fetchUserData(url) {
     const response = await fetch(url, {
       headers: { "x-api-key": "reqres-free-v1" },
     });
-
-    return await response.json();
+    console.log(response)
+    if (response.ok) {
+return await response.json();
+    } else {
+      return {error: "user not found"}
+    }
   } catch (error) {
     return { error: error.message };
   }
@@ -30,6 +34,7 @@ endpoints.forEach((endpoint) => {
 
   button.addEventListener("click", async () => {
     const result = await fetchUserData(endpoint.url);
+    console.log(result);
 
     if (result.error) {
       errorElement.textContent = result.error;
@@ -44,3 +49,4 @@ endpoints.forEach((endpoint) => {
     }
   });
 });
+

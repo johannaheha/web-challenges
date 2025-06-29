@@ -10,13 +10,8 @@ let currentColorIndex = 0;
 changeColorButton.addEventListener("click", () => {
   // Add your solution below
 
-  colorChangeCard.backgroundColor = colors[currentColorIndex];
-
-  if (currentColorIndex === 4) {
-    currentColorIndex === 0;
-  } else {
-    currentColorIndex++;
-  }
+ currentColorIndex = (currentColorIndex +1) % colors.length;
+ colorChangeCard.style.backgroundColor = colors[currentColorIndex];
 
 });
 
@@ -38,6 +33,7 @@ let loaderActive = false;
 
 toggleLoaderButton.addEventListener("click", () => {
   // Add your solution below
+  loaderContainer.classList.toggle("active");
 });
 
 /*  -----------------------------------------------------------
