@@ -89,9 +89,17 @@ function firstAnimalsStartingWithLetterG() {
 }
 const firstAnimalStartingWithLetterG = firstAnimalsStartingWithLetterG();
 
+function getIndexOfAnimalWithNameLongerThanFive() {
+  for (let i = 0; i < animals.length; i++) {
+    if (animals[i].name.length > 5) {
+      return i;
+    }
+  }
+  return -1;
+}
 
-
-const indexOfAnimalWithNameLongerFive = null;
+const indexOfAnimalWithNameLongerFive =
+  getIndexOfAnimalWithNameLongerThanFive();
 
 // Note:
 // - Sorting strings is slightly more complicated than sorting numbers.
@@ -102,7 +110,11 @@ const indexOfAnimalWithNameLongerFive = null;
 // Hint: sort() mutates the original array, which is bad.
 // Make sure to use toSorted() instead.
 
-const animalsSortedAlphabetically = null;
+const animalsSortedAlphabetically = animals.toSorted((a, b) => {
+  if (a.name < b.name) return -1;
+  if (a.name > b.name) return 1;
+  return 0;
+});
 
 const animalsSortedByWeightStartingWithLowest = null;
 
