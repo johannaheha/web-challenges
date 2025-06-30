@@ -13,7 +13,7 @@ console.log(hasEmployeesOlderThan65);
 // Hint: use some()
 
 const employeeNamedFrederique = employees.some(
-  (employee) => employee.name === "Frederique"
+  (employee) => employee.firstName === "Frederique"
 );
 console.log(employeeNamedFrederique);
 
@@ -29,7 +29,7 @@ console.log(employeeYoungerThan18);
 // Hint: use every()
 
 const everyEmployeeHasPhoneNumber = employees.every(
-  (employee) => (employee.phone = true)
+  (employee) => employee.phone
 );
 console.log(everyEmployeeHasPhoneNumber);
 
@@ -56,7 +56,7 @@ console.log(everyEmployeeHasFirstAndLastName);
 // Hint: use find()
 
 const employeeLouise33 = employees.find(
-  (employee) => employee.name === "Louise" && employee.age === 33
+  (employee) => employee.firstName === "Louise" && employee.age === 33
 );
 console.log(employeeLouise33);
 
@@ -65,7 +65,7 @@ console.log(employeeLouise33);
 // Hint: Use find()
 
 const employeeWithId = employees.find(
-  (employee) => employee.id === 0.0795620650485831
+  (employee) => employee.id === "0.0795620650485831"
 );
 console.log(employeeWithId);
 
@@ -93,7 +93,9 @@ console.log(employeesSortedByAge);
 // Hint use toSorted()
 
 const employeesSortedByLastName = employees.toSorted((a, b) => {
-  return b.lastNamename - a.lastName;
+  const nameA = a.lastName.toLowerCase();
+  const nameB = b.lastName.toLowerCase();
+  return nameA < nameB ? 1 : -1;
 });
 console.log(employeesSortedByLastName);
 
