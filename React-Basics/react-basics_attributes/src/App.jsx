@@ -1,7 +1,7 @@
 import "./styles.css";
 
 export default function App() {
-  return Article();
+  return <Article />;
 }
 
 function Article() {
@@ -12,10 +12,9 @@ function Article() {
         <label htmlFor="Eingabe">Eingabefeld</label>
         <input type="text" id="Eingabe"></input>
       </form>
-      <a
-        className="article__link"
-        href="https://de.wikipedia.org/wiki/React"
-      >Click me for more information</a>
+      <a className="article__link" href="https://de.wikipedia.org/wiki/React">
+        Click me for more information
+      </a>
     </article>
   );
 }
