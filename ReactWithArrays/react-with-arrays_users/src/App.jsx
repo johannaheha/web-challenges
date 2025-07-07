@@ -9,7 +9,10 @@ export default function App() {
     <main className="app">
       <Title text="ClientBoard" />
       <div className="app__card-grid">
-        <Card user={USERS[0]} />
+        {/* // 1. Use `Array.map` to create a card for each user in the `USERS` array. Make sure to add a unique key to each card. */}
+        {USERS.map((user) => (
+          <Card key={user.id} user={user} />
+        ))}
       </div>
     </main>
   );
