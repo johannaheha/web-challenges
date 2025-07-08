@@ -47,12 +47,14 @@ export default function EntriesSection() {
         </Tab>
       </Tabs>
       <div className="entries-section__entries">
-        {entries.map(({ id, date, motto, notes }, index) => (
-          <Fragment key={id}>
-            <Entry date={date} motto={motto} notes={notes}></Entry>
-            {index < entries.length - 1 && <Divider />}
-          </Fragment>
-        ))}
+        {entries.map(({ id, date, motto, notes }, index) => {
+          return (
+            <Fragment key={id}>
+              <Entry date={date} motto={motto} notes={notes}></Entry>
+              {index < entries.length - 1 && <Divider />}
+            </Fragment>
+          );
+        })}
         {/* // <Entry */}
         {/* //   date="Feb 27, 2028"
         //   motto="Thats life in the city"

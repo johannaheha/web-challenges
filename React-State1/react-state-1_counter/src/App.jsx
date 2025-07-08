@@ -1,7 +1,9 @@
 import "./styles.css";
 
 export default function App() {
-  let count = 0;
+  // let count = 0;
+
+  const [count, setCount] = useState(0);
 
   return (
     <div className="container">
@@ -10,7 +12,8 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("🤔");
+            setCount(count--);
+            console.log(count);
           }}
         >
           -
@@ -18,7 +21,8 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("🤔");
+            setCount(count++);
+            console.log(count);
           }}
         >
           +
@@ -27,3 +31,8 @@ export default function App() {
     </div>
   );
 }
+// - Using `let` doesn't seem to be the right approach for declaring a variable in this scenario.
+// - Is there a built-in React function you can use instead?
+//   - Make sure to import this function.
+// - Currently, the `<button>`s' event handlers log an emoji to the console.
+//   - The event handlers should instead handle a different type of functionality.
