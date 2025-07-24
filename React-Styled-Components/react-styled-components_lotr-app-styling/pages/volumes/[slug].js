@@ -2,6 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { volumes } from "../../lib/data";
+import styled from "styled-components";
+import Chevron from "../../icon/chevron-left.svg";
+import ArrowRight from "/icon/arrow-right.svg";
+import ArrowLeft from "/icon/arrow-left.svg";
 
 export default function VolumeDetail() {
   const router = useRouter();
@@ -21,7 +25,10 @@ export default function VolumeDetail() {
 
   return (
     <>
-      <Link href="/volumes">← All Volumes</Link>
+      <Link href="/volumes">
+        <Chevron />
+        All Volumes
+      </Link>
       <h1>{title}</h1>
       <p>{description}</p>
       <ul>
@@ -40,17 +47,18 @@ export default function VolumeDetail() {
       {previousVolume ? (
         <div>
           <Link href={`/volumes/${previousVolume.slug}`}>
-            ← Previous Volume: {previousVolume.title}
+            <ArrowLeft /> Previous Volume: {previousVolume.title}
           </Link>
         </div>
       ) : null}
       {nextVolume ? (
         <div>
           <Link href={`/volumes/${nextVolume.slug}`}>
-            Next Volume: {nextVolume.title} →
+            Next Volume: {nextVolume.title} <ArrowRight />
           </Link>
         </div>
       ) : null}
     </>
   );
 }
+const StyledLinkBack = styled(Link)``;
