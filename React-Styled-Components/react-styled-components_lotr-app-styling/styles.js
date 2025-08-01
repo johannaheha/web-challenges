@@ -14,7 +14,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: system-ui,  
+    font-family: var(--font-family); 
+  padding: 20px;
   }
 :root {
   /* Color styles */

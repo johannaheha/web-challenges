@@ -6,8 +6,8 @@ import styled from "styled-components";
 export default function Volumes() {
   return (
     <>
-      <h1>The Lord of the Rings</h1>
-      <p>{introduction}</p>
+      <StyledHeader>The Lord of the Rings</StyledHeader>
+      <StyledIntro>{introduction}</StyledIntro>
       <h2>All Volumes</h2>
       <WrappedList>
         {volumes.map((volume) => (
@@ -15,8 +15,8 @@ export default function Volumes() {
             <VolumeImage
               src={volume.cover}
               alt={`Cover image of ${volume.title}`}
-              width={140}
-              height={230}
+              width={84}
+              height={138}
             />
             <TitleLink href={`/volumes/${volume.slug}`}>
               {volume.title}
@@ -31,14 +31,15 @@ export default function Volumes() {
 const WrappedList = styled.ul`
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0;
 `;
 
 const ListElement = styled.li`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 140px;
+  width: 84px;
   gap: 20px;
 `;
 
@@ -51,4 +52,13 @@ const VolumeImage = styled(Image)`
 `;
 const TitleLink = styled(Link)`
   text-decoration: none;
+  font-size: 12px;
+`;
+const StyledHeader = styled.h1`
+  font-size: 45px;
+  margin: 0;
+`;
+
+const StyledIntro = styled.p`
+  margin-bottom: 50px;
 `;
