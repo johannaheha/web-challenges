@@ -15,3 +15,14 @@ export const server = createServer((request, response) => {
     return;
   }
 });
+
+// Hier wird ein Objekt wiedergegeben: 
+
+// export const server = createServer((request, response) => {
+// const person= {
+// name: chance.name();
+// age: chance.age();
+// profession : chance.profession()})}
+
+// response.setHeader("Content-Type", "application/json")
+// response.end(JSON.stringify.person))
