@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 export default function PokemonList() {
   const [pokemon, setPokemon] = useState([]);
+
   useEffect(() => {
     loadPokemon(); //Funktion im useEffect aufrufen
   }, []); //1. Grundgerüst von useEffect, []->bedeutet nur beim allerersten Mal ausführen
